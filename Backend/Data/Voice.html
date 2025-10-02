@@ -1,0 +1,16 @@
+<!doctype html>
+                <html><head><meta charset="utf-8"><title>Voice</title></head><body>
+                <button id="start" onclick="start()">Start</button><button id="stop" onclick="stop()">Stop</button>
+                <p id="final"></p>
+                <script>
+                var rec;
+                function start(){
+                  rec = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                  rec.lang = 'en-US';
+                  rec.continuous = true;
+                  rec.onresult = function(e){ document.getElementById('final').innerText = e.results[e.results.length-1][0].transcript; }
+                  rec.start();
+                }
+                function stop(){ if(rec) rec.stop(); }
+                </script>
+                </body></html>

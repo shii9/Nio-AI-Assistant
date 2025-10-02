@@ -1,0 +1,8 @@
+flask==2.3.3
+flask-cors==4.0.0
+groq==0.4.2
+requests==2.31.0
+beautifulsoup4==4.12.2
+pywhatkit==5.4
+appopener==1.7
+asyncio==3.4.3
