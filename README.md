@@ -59,5 +59,19 @@ With a professional interface and integration of AI models for accurate informat
 
 ---
 
+
+## 🔑 API Key Requirement
+
+This project integrates with multiple external AI services that require API keys.  
+To run the assistant, you must configure your own API keys securely (e.g., using environment variables or a `.env` file).  
+
+### Required Keys:
+- `CohereAPIKey` → For natural language processing  
+- `GroqAPIKey` → For LLM integration and responses  
+- `HuggingFaceAPIKey` → For AI models (e.g., NLP, transformers)  
+- `DEEP_AI_API_KEY` → For additional AI-powered features (e.g., image generation, analysis)  
+
+
 ## 🚀 About
 Nio AI Assistant is designed as a **smart, extensible framework** that combines powerful AI capabilities with an elegant user interface, making advanced human-computer interaction both practical and enjoyable.
+
